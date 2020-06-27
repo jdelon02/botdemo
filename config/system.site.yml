@@ -1,0 +1,14 @@
+uuid: 257c76a5-9fed-4d96-807c-f23a5c1fc04c
+name: botdemo
+mail: jdelong@backofficethinking.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
