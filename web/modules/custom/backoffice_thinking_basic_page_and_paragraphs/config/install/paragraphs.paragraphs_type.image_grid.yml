@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+    - paragraphs_viewmode
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: image_grid
+label: 'Image Grid'
+icon_uuid: null
+description: 'Responsive grid layout that adjusts at different viewport widths.'
+behavior_plugins:
+  paragraphs_viewmode_behavior:
+    override_mode: default
+    override_available:
+      default: Default
+    override_default: default

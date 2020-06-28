@@ -1,0 +1,12 @@
+{
+    "name": "jdelon02/backoffice_thinking_responsive_image_and_related",
+    "description": "Responsive Images and related for D8 sites.",
+    "type": "drupal/module",
+    "authors": [
+        {
+            "name": "Jeremy DeLong",
+            "email": "chefjeremy@delongaz.com"
+        }
+    ],
+    "require": {}
+}

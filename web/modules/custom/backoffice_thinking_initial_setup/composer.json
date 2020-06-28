@@ -1,0 +1,12 @@
+{
+    "name": "jdelon02/backoffice_thinking_initial_setup",
+    "description": "Basic enablement of modules, creates landing page content type",
+    "type": "drupal/module",
+    "authors": [
+        {
+            "name": "Jeremy DeLong",
+            "email": "chefjeremy@delongaz.com"
+        }
+    ],
+    "require": {}
+}

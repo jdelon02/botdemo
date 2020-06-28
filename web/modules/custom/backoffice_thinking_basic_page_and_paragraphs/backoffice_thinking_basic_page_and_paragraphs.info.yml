@@ -1,0 +1,25 @@
+name: 'Basic Page and Paragraphs'
+type: module
+core: 8.x
+dependencies:
+  - ds
+  - entity_reference_display
+  - entity_reference_revisions
+  - field
+  - field_group
+  - field_layout
+  - layout_discovery
+  - media
+  - media_library
+  - node
+  - options
+  - paragraphs
+  - paragraphs_library
+  - paragraphs_viewmode
+  - path
+  - rdf
+  - text
+  - user
+version: 8.x-1.0
+package: 'BackOffice Thinking'
+core_incompatible: false

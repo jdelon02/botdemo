@@ -1,0 +1,12 @@
+{
+    "name": "jdelon02/backoffice_thinking_basic_page_and_paragraphs",
+    "description": "Adds paragraphs and paragraph field to basic page",
+    "type": "drudrupal/module",
+    "authors": [
+        {
+            "name": "Jeremy DeLong",
+            "email": "chefjeremy@delongaz.com"
+        }
+    ],
+    "require": {}
+}

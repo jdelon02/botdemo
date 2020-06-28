@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.image_25_left
+    - field.field.paragraph.wysiwyg_layouts.field_body
+    - field.field.paragraph.wysiwyg_layouts.field_media
+    - field.field.paragraph.wysiwyg_layouts.field_media_view_mode
+    - paragraphs.paragraphs_type.wysiwyg_layouts
+  module:
+    - options
+id: paragraph.wysiwyg_layouts.image_25_left
+targetEntityType: paragraph
+bundle: wysiwyg_layouts
+mode: image_25_left
+content:
+  field_media:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_media_view_mode:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  field_body: true

@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.components.simple_title_and_body
+    - field.field.components.simple_title_and_body.field_body
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: components.simple_title_and_body.default
+targetEntityType: components
+bundle: simple_title_and_body
+mode: default
+content:
+  field_body:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

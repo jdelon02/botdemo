@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_view_mode
+    - paragraphs.paragraphs_type.wysiwyg_layouts
+  module:
+    - entity_reference_display
+id: paragraph.wysiwyg_layouts.field_media_view_mode
+field_name: field_media_view_mode
+entity_type: paragraph
+bundle: wysiwyg_layouts
+label: 'Media View Mode'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: landscape_4_3
+default_value_callback: ''
+settings:
+  exclude:
+    cinemascope_21_9: cinemascope_21_9
+    landscape_4_3: landscape_4_3
+    portrait_3_4: portrait_3_4
+    square_1_1: square_1_1
+    widescreen_16_9: widescreen_16_9
+  negate: 1
+field_type: entity_reference_display

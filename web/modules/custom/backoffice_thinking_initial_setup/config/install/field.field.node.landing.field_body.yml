@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.components.simple_title_and_body
+    - field.storage.node.field_body
+    - node.type.landing
+id: node.landing.field_body
+field_name: field_body
+entity_type: node
+bundle: landing
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:components'
+  handler_settings:
+    target_bundles:
+      simple_title_and_body: simple_title_and_body
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

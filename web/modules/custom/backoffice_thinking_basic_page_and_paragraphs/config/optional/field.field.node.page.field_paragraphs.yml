@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.page
+    - paragraphs.paragraphs_type.from_library
+    - paragraphs.paragraphs_type.image_grid
+    - paragraphs.paragraphs_type.standalone_image_paragraph
+    - paragraphs.paragraphs_type.wysiwyg_layouts
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: page
+label: Paragraphs
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      from_library: from_library
+      image_grid: image_grid
+      standalone_image_paragraph: standalone_image_paragraph
+      wysiwyg_layouts: wysiwyg_layouts
+    target_bundles_drag_drop:
+      from_library:
+        enabled: true
+        weight: 5
+      image_grid:
+        enabled: true
+        weight: 6
+      standalone_image_paragraph:
+        enabled: true
+        weight: 7
+      wysiwyg_layouts:
+        enabled: true
+        weight: 8
+field_type: entity_reference_revisions

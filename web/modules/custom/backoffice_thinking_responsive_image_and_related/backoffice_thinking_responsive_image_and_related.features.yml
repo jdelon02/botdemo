@@ -1,0 +1,9 @@
+bundle: backoffice_thinking
+excluded:
+  - core.entity_form_display.media.image.default
+  - core.entity_view_display.media.image.default
+  - field.field.media.image.field_media_image
+  - field.storage.media.field_media_image
+  - media.type.image
+  - blazy.settings
+required: true

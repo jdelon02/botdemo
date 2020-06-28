@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.components
+name: 'Simple Title and Body'
+type: simple_title_and_body
+description: 'Title is displayed, body allows for simple html.'

@@ -1,0 +1,58 @@
+name: 'Initial Setup'
+description: 'Enabling all modules that are part of our normal install'
+type: module
+core: 8.x
+version: 8.x-1.0
+package: 'BackOffice Thinking'
+core_incompatible: false
+dependencies:
+  - ds
+  - eck
+  - field
+  - field_layout
+  - inline_entity_form
+  - layout_discovery
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+  - admin_toolbar
+  - admin_toolbar_tools
+  - adminimal_admin_toolbar
+  - dblog
+  - module_filter
+  - bootstrap_layouts
+  - context
+  - config_direct_save
+  - config_delete
+  - config_update
+  - devel
+  - crop
+  - focal_point
+  - menu_block
+  - paragraphs
+  - smart_trim
+  - token
+  - token_filter
+  - structure_sync
+  - views_infinite_scroll
+  - viewsreference
+  - metatag
+  - better_exposed_filters
+  - blazy_ui
+  - block_class
+  - button_link
+  - context_ui
+  - devel_generate
+  - ds_extras
+  - ds_switch_view_mode
+  - entity_browser
+  - entity_browser_entity_form
+  - entity_class_formatter
+  - inline_form_errors
+  - insert_view
+  - libraries
+  - telephone
+  - google_analytics
+  - simple_sitemap

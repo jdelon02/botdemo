@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+    - paragraphs_viewmode
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: standalone_image_paragraph
+label: 'Standalone Image Paragraph'
+icon_uuid: null
+description: 'Allows for creating media (image and remote video) paragraphs that can be rendered in different ways.'
+behavior_plugins:
+  paragraphs_viewmode_behavior:
+    enabled: true
+    override_mode: default
+    override_available:
+      centered_content_width: centered_content_width
+      full_content_width: full_content_width
+      default: '0'
+      image_25_left: '0'
+      image_25_right: '0'
+      image_50_left: '0'
+      image_50_right: '0'
+      preview: '0'
+    override_default: centered_content_width
