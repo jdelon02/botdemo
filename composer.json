@@ -7,22 +7,89 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ],
     "require": {
-        "php": ">=7.0.8",
-        "composer/installers": "^1.0.20",
+        "php": ">=7.3",
+        "bower-asset/blazy": "^1.8",
+        "bower-asset/slick-carousel": "^1.8",
+        "composer/installers": "^1.7",
         "cweagans/composer-patches": "^1.0",
-        "drupal/core-composer-scaffold": "^8.8.1",
+        "drupal/admin_toolbar": "^2.3",
+        "drupal/adminimal_admin_toolbar": "^1.11",
+        "drupal/adminimal_theme": "^1.5",
+        "drupal/bamboo_twig": "^4.1",
+        "drupal/better_exposed_filters": "^4.0@beta",
+        "drupal/bg_image_formatter": "^1.14",
+        "drupal/blazy": "^2.1",
+        "drupal/block_class": "^1.2",
+        "drupal/bootstrap": "^3.23",
+        "drupal/bootstrap_layouts": "^5.2",
+        "drupal/button_link": "^1.2",
+        "drupal/config_delete": "^1.17",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",
+        "drupal/context": "^4.0@beta",
+        "drupal/core-composer-scaffold": "^8.8.1",
+        "drupal/core-recommended": "^8.8",
+        "drupal/custom_formatters": "^3.0@alpha",
+        "drupal/devel": "^4.0",
+        "drupal/ds": "^3.7",
+        "drupal/eck": "^1.0@beta",
+        "drupal/entity_class_formatter": "^1.3",
+        "drupal/entity_reference_display": "^1.3",
+        "drupal/entity_usage": "^2.0@beta",
+        "drupal/environment_indicator": "^4.0",
+        "drupal/features": "^3.11",
+        "drupal/field_group": "^3.1",
+        "drupal/field_token_value": "^1.0",
+        "drupal/filefield_paths": "^1.0@beta",
+        "drupal/flexslider": "^2.0@RC",
+        "drupal/focal_point": "^1.4",
+        "drupal/fontawesome": "^2.16",
+        "drupal/fontawesome_menu_icons": "^1.8",
+        "drupal/image_link_attributes": "^1.4",
+        "drupal/insert_view": "^1.0@alpha",
+        "drupal/libraries": "^3.0@alpha",
+        "drupal/link_attributes": "^1.10",
+        "drupal/linked_field": "^1.3",
+        "drupal/media_entity_browser": "^1.0@beta",
+        "drupal/menu_block": "^1.6",
+        "drupal/menu_link_attributes": "^1.0",
+        "drupal/metatag": "^1.13",
+        "drupal/module_filter": "^3.1",
+        "drupal/paragraphs": "^1.12",
+        "drupal/paragraphs_viewmode": "^1.0@alpha",
+        "drupal/pathauto": "^1.8",
+        "drupal/select2": "^1.8",
+        "drupal/simple_block": "^1.0@beta",
+        "drupal/slick": "^2.2",
+        "drupal/slick_entityreference": "^2.0",
+        "drupal/slick_paragraphs": "^2.0",
+        "drupal/smart_trim": "^1.3",
+        "drupal/structure_sync": "^1.16",
+        "drupal/taxonomy_manager": "^1.0@alpha",
+        "drupal/term_condition": "^1.2",
+        "drupal/token": "^1.7",
+        "drupal/token_filter": "^1.2",
+        "drupal/tvi": "^1.0@beta",
+        "drupal/twig_field_value": "^1.2",
+        "drupal/twig_tweak": "^2.1",
+        "drupal/twig_vardumper": "^1.2",
+        "drupal/views_infinite_scroll": "^1.7",
+        "drupal/views_taxonomy_term_name_depth": "^7.0",
+        "drupal/viewsreference": "^1.4",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8.3",
+        "oomphinc/composer-installers-extender": "^1.1",
+        "pantheon-systems/drupal-integrations": "^8",
         "pantheon-systems/quicksilver-pushback": "^2",
         "rvtraveller/qs-composer-installer": "^1.1",
-        "drupal/core-recommended": "^8.8",
-        "pantheon-systems/drupal-integrations": "^8",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
@@ -45,7 +112,7 @@
     "conflict": {
             "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "classmap": [
@@ -72,7 +139,8 @@
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
         "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "mv ./web/libraries/slick-carousel ./web/libraries/slick"
         ],
         "post-create-project-cmd": [
             "@drupal-scaffold",
@@ -82,13 +150,19 @@
     "extra": {
         "installer-paths": {
             "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
             "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
         },
+        "installer-types": ["bower-asset", "npm-asset"],
+        "patches": {},
         "build-env": {
             "install-cms": [
                 "drush site-install standard --account-mail={account-mail} --account-name={account-name} --account-pass={account-pass} --site-mail={site-mail} --site-name={site-name} --yes"
@@ -112,7 +186,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "platform": {
-            "php": "7.0.8"
+            "php": "7.3"
         }
     }
 }
