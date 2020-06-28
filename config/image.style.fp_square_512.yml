@@ -1,0 +1,19 @@
+uuid: 2b878d0d-b726-40ba-bc08-244b1e89776c
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: EUTqR1Zuuw5ulkk4ILyx8AjqGWhjxbRJB4W-Uc-c1Wo
+name: fp_square_512
+label: 'FP Square (512)'
+effects:
+  459e30b0-cd22-451d-b51a-f9ee3a2f2a4e:
+    uuid: 459e30b0-cd22-451d-b51a-f9ee3a2f2a4e
+    id: focal_point_crop
+    weight: 1
+    data:
+      width: 512
+      height: 512
+      crop_type: square_crop

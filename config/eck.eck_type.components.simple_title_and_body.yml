@@ -1,0 +1,11 @@
+uuid: 54c4491d-7768-49e4-8752-e364f8ee308e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.components
+_core:
+  default_config_hash: vtw9lrOhYJ6lmTypNjD4b6Cvb3L0u_GWkP65Hn_FSng
+type: simple_title_and_body
+name: 'Simple Title and Body'
+description: 'Title is displayed, body allows for simple html.'

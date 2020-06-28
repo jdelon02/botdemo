@@ -1,0 +1,23 @@
+uuid: 95fcff67-e390-4a66-abdf-9abf68213c82
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+    - paragraphs_viewmode
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+_core:
+  default_config_hash: 9c6Ai-axSN-ecu4x6Vyxnw3PkNpjDHWT4rzaAe6AMts
+id: image_grid
+label: 'Image Grid'
+icon_uuid: null
+icon_default: null
+description: 'Responsive grid layout that adjusts at different viewport widths.'
+behavior_plugins:
+  paragraphs_viewmode_behavior:
+    override_mode: default
+    override_available:
+      default: Default
+    override_default: default

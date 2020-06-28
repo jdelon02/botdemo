@@ -1,0 +1,23 @@
+uuid: 8d4acd22-c782-4fa3-bef7-53765a76c6c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.components.simple_title_and_body
+    - field.storage.components.field_body
+  module:
+    - text
+_core:
+  default_config_hash: LvsK3Ur71D9LFO2Uh9n2CWpj2Xi0I6pyoVQSLN9XzCA
+id: components.simple_title_and_body.field_body
+field_name: field_body
+entity_type: components
+bundle: simple_title_and_body
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

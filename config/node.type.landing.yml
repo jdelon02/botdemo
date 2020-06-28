@@ -1,0 +1,20 @@
+uuid: 18267632-9ede-4854-8ca5-b57ddd5b7722
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: FkIcTLObhVecseG4I9LGOA4JnVod5j_aO6nFQwv-2SE
+name: Landing
+type: landing
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,14 @@
+uuid: a3976b14-4ede-444b-8eda-ed5c0fdfa210
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: IqmjZiu9JW_Svxxvx8FTJ-PilLrgee_fePNilqANcn4
+id: cinemascope_crop
+label: 'Cinemascope Crop'
+description: 'Meant for images that should be cropped and rendered in 21:9 ratio.'
+aspect_ratio: '21:9'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 1920
+hard_limit_height: 823

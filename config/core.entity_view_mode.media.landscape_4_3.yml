@@ -1,0 +1,12 @@
+uuid: ecf303b2-a58c-42b0-b86d-b37668a014ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: Sef-r_fmEGl-9dXdlHgfCD0oYYmJNJUEhyNggGI9TsY
+id: media.landscape_4_3
+label: 'Landscape (4:3)'
+targetEntityType: media
+cache: true
