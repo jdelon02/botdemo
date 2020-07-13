@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;800&display=swap');
 /**
  * If using a CSS pre-processor, tell it to overwrite this file. If not, place
  * your custom CSS modifications here.
@@ -6,7 +7,7 @@
 
 /**********global********/
 body{
-    font-family: 'Merriweather', serif;
+    font-family: 'Muli', sans-serif;
 }
 * {
     transition: all .25s ease-in-out;
@@ -25,14 +26,21 @@ a:focus, a:hover {
 }
 /*nav*/
 .navbar-default .navbar-nav>li>a {
-    color:#000;
+    color:#ffffff;
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #52b3a6;
+    color: #ffd969;
 }
 .nav>li>a:focus, .nav>li>a:hover {
     background-color:transparent;
     background:none;
+}
+
+@media screen and (min-width:768px) {
+    .page-node-type-page .region-content {
+        max-width: 960px;
+        margin: 0 auto;
+    }
 }
 
 
