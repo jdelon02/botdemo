@@ -5,19 +5,94 @@
  */
 
 /**********header********/
-/*region navigation*/
-.region-navigation-collapsible {
+
+/*navbar default overrides - bootstrap*/
+.navbar-default {
+    background-color:#fff;
+    border-color: transparent;
+    border: none;
+}
+
+/*override max-width*/
+.navbar-default {
+    left: 50%;
+    margin-left: -50vw;
+    width: 100vw;
+    max-width: 100% !important;
+    padding: 0 50px;
+    position: relative;
+}
+
+/*navigation*/
+.navbar-header {
+    width: 100%;
+}
+.region-navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.navbar-default {
-    background:#fff;
-    background-color: transparent; /*override*/
-    border-color: transparent; /*override*/
-    border:none;
+@media screen and (min-width:768px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 300px;
+    }
+    header .navbar-nav > li {
+        margin: 0 15px;
+    }
 }
-header .logo img {
-    mix-blend-mode:difference;
-    filter:invert(1);
+
+header .navbar-default .navbar-nav > li > a {
+    color: #000;
+    font-size:1.125rem;
+    font-weight: 500;
+/*    for hover*/
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 5px;
+}
+header .navbar-default .navbar-nav > li > a:before {
+/*    for hover*/
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #196fe3;
+    height: 1px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+header .navbar-default .navbar-nav > li > a:hover:before, 
+header .navbar-default .navbar-nav > li > a:focus:before,
+header .navbar-default .navbar-nav > .active > a:before, 
+header .navbar-default .navbar-nav > .active > a:hover:before, 
+header .navbar-default .navbar-nav > .active > a:focus:hover,
+header .navbar-default .navbar-nav > .active > a,
+header .navbar-default .navbar-nav > .active > a:focus {
+    left: 0;
+    right: 0;
+    color:#196fe3;
+}
+header .navbar-default .navbar-nav > .active > a,
+header .navbar-default .navbar-nav > .active > a:focus {
+    background:none;
+}
+
+/*SEARCH OVERLAY*/
+.search-block-form {
+    display: none; 
+/*temporary*/
 }
