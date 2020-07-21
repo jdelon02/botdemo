@@ -1,0 +1,54 @@
+.full-width {
+    left: 50%;
+    margin-left: -50vw;
+    width: 100vw;
+}
+.paragraph .slide .field--name-field-description {
+    position: absolute;
+    bottom: 80px;
+    margin: 0 5%;
+    max-width: 70%;
+    width: 100%;
+    color: #fff;
+    font-size: 1.375rem;
+}
+.paragraph .slick-dots {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: absolute;
+    bottom: 40px;
+    align-items: center;
+}
+.paragraph .slick-dots li {
+    margin: 0 7px;
+    line-height: 0;
+}
+.paragraph .slick-dots button {
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 10px;
+    font-size: 0;
+}
+.paragraph .slick-dots .slick-active button,
+.paragraph .slick-dots li:hover button {
+    background-color: #fff;
+    padding: 7px;
+}
+@media screen and (max-width:768px) {
+    .paragraph .slick-dots button,
+    .paragraph .slick-dots .slick-active button, .paragraph .slick-dots li:hover button {
+        padding: 5px;
+    }
+    .paragraph .slick-dots {
+        bottom: 20px;
+    }
+    .paragraph .slide .field--name-field-description {
+        bottom: 40px;
+        font-size: 1.125rem;
+    }
+}
