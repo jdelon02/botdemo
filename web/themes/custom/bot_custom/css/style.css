@@ -2,3 +2,65 @@
  * If using a CSS pre-processor, tell it to overwrite this file. If not, place
  * your custom CSS modifications here.
  */
+
+.paragraph--type-image-grid .bs-region--main .field--items {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.paragraph--type-image-grid .bs-region--main .field--items > .field--item {
+    width: 50%;
+}
+.paragraph--type-image-grid img {
+    object-fit: cover;
+}
+.paragraph--type-image-grid .bs-region--main .field--items > .field--item .field--item {
+    padding: 15px;
+}
+@media screen and (min-width:768px) {
+    .paragraph--type-image-grid .bs-region--main .field--items > .field--item {
+        width: 33.3333%;
+    }
+}
+
+/* DEFAULt PARAGRAPHS */
+.paragraph{
+	position: relative;
+	margin-bottom: 1em;
+}
+.wide-width {
+	left: 50%;
+	margin-left: -40vw;
+	width: 80vw;
+}
+.full-width {
+	left: 50%;
+	margin-left: -50vw;
+	width: 100vw;
+}
+.paragraph:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width:768px){	
+	.image-50-right .field--name-field-media, 
+	.image-25-right .field--name-field-media {
+		float: right;
+	}
+	.image-50-left .field--name-field-media, 
+	.image-25-left .field--name-field-media {
+		float: left;
+	}
+	.image-50-right .field--name-field-media, 
+	.image-50-left .field--name-field-media {
+		width: 50%;
+	}
+	.image-25-right .field--name-field-media, 
+	.image-25-left .field--name-field-media {
+		width: 50%;
+	}
+}

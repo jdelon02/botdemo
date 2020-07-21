@@ -5,19 +5,3 @@
  */
 
 /**********header********/
-/*region navigation*/
-.region-navigation-collapsible {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar-default {
-    background:#fff;
-    background-color: transparent; /*override*/
-    border-color: transparent; /*override*/
-    border:none;
-}
-header .logo img {
-    mix-blend-mode:difference;
-    filter:invert(1);
-}
