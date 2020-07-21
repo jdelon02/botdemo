@@ -1,0 +1,10 @@
+.wide-width {
+	left: 50%;
+	margin-left: -40vw;
+	width: 80vw;
+}
+.full-width {
+	left: 50%;
+	margin-left: -50vw;
+	width: 100vw;
+}
