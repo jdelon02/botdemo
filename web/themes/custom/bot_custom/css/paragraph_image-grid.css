@@ -1,0 +1,22 @@
+.paragraph--type-image-grid .bs-region--main .field--items {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.paragraph--type-image-grid .bs-region--main .field--items > .field--item {
+    width: 50%;
+}
+.paragraph--type-image-grid img {
+    object-fit: cover;
+}
+.paragraph--type-image-grid .bs-region--main .field--items > .field--item .field--item {
+    padding: 15px;
+}
+@media screen and (min-width:768px) {
+    .paragraph--type-image-grid .bs-region--main .field--items > .field--item {
+        width: 33.3333%;
+    }
+}
