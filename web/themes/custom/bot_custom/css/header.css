@@ -6,18 +6,14 @@
 
 /**********header********/
 /*region navigation*/
-.region-navigation-collapsible {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .navbar-default {
-    background:#fff;
-    background-color: transparent; /*override*/
-    border-color: transparent; /*override*/
-    border:none;
+    background:#707479;
+    background-color:#707479;
+    border-radius: 0;
+    padding: 20px;
 }
-header .logo img {
-    mix-blend-mode:difference;
-    filter:invert(1);
+@media screen and (min-width:768px) {
+    header {
+        display: flex;
+    }
 }
