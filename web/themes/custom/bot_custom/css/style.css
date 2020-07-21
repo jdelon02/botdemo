@@ -1,4 +1,21 @@
+@import url(paragraph_image-float.css);
+@import url(paragraph_image-grid.css);
+@import url(paragraph_image-widths.css);
+
 /**
  * If using a CSS pre-processor, tell it to overwrite this file. If not, place
  * your custom CSS modifications here.
  */
+
+
+
+/* DEFAULt PARAGRAPHS */
+.paragraph{
+	position: relative;
+	margin-bottom: 1em;
+}
+.paragraph:after{
+  content: "";
+  display: table;
+  clear: both;
+}
