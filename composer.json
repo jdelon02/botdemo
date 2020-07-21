@@ -81,6 +81,7 @@
         "drupal/term_condition": "^1.2",
         "drupal/token": "^1.7",
         "drupal/token_filter": "^1.2",
+        "drupal/tour_ui": "^1.0",
         "drupal/tvi": "^1.0@beta",
         "drupal/twig_field_value": "^1.2",
         "drupal/twig_tweak": "^2.1",
