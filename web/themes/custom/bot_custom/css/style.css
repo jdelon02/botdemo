@@ -1,4 +1,70 @@
+@import url(paragraph_image-float.css);
+@import url(paragraph_image-grid.css);
+@import url(paragraph_image-widths.css);
+@import url(paragraph_slideshow.css);
+
 /**
  * If using a CSS pre-processor, tell it to overwrite this file. If not, place
  * your custom CSS modifications here.
  */
+
+
+
+/* DEFAULt PARAGRAPHS */
+.paragraph{
+	position: relative;
+	margin-bottom: 1em;
+}
+.paragraph:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*widths*/
+.width-narrow,
+.components--type-simple-title-and-body,
+.components--type-callout {
+    width:100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+.wide-width,
+.width-wide {
+	left: 50%;
+	margin-left: -40vw;
+	width: 80vw;
+	max-width: none;
+}
+.full-width,
+.width-full {
+	left: 50%;
+	margin-left: -50vw;
+	width: 100vw;
+	max-width: none;
+}
+.page-node-type-landing .main-container.container {
+    width: 100%;
+    padding: 0;
+}
+.width-narrow,
+.width-wide,
+.width-full,
+.components--type-simple-title-and-body,
+.components--type-callout {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.components{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*component background selector*/
+.bg-color-white {
+    background:#fff;
+}
+.bg-color-light-gray {
+    background:#ecebe7;
+}
