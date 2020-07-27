@@ -1,0 +1,20 @@
+@media screen and (min-width:768px){	
+	.image-50-right .field--name-field-media, 
+	.image-25-right .field--name-field-media {
+		float: right;
+        margin-left: 25px;
+	}
+	.image-50-left .field--name-field-media, 
+	.image-25-left .field--name-field-media {
+		float: left;
+        margin-right: 25px;
+	}
+	.image-50-right .field--name-field-media, 
+	.image-50-left .field--name-field-media {
+		width: 50%;
+	}
+	.image-25-right .field--name-field-media, 
+	.image-25-left .field--name-field-media {
+		width: 50%;
+	}
+}
