@@ -30,6 +30,7 @@
         "drupal/bootstrap": "^3.23",
         "drupal/bootstrap_layouts": "^5.2",
         "drupal/button_link": "^1.2",
+        "drupal/conditional_fields": "^1.0",
         "drupal/config_delete": "^1.17",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
@@ -81,10 +82,12 @@
         "drupal/term_condition": "^1.2",
         "drupal/token": "^1.7",
         "drupal/token_filter": "^1.2",
+        "drupal/tour_ui": "^1.0",
         "drupal/tvi": "^1.0@beta",
         "drupal/twig_field_value": "^1.2",
         "drupal/twig_tweak": "^2.1",
         "drupal/twig_vardumper": "^1.2",
+        "drupal/view_mode_selector": "^1.0",
         "drupal/views_infinite_scroll": "^1.7",
         "drupal/views_taxonomy_term_name_depth": "^7.0",
         "drupal/viewsreference": "^1.4",
@@ -144,6 +147,7 @@
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "rm -rf ./web/libraries/slick",
             "mv ./web/libraries/slick-carousel ./web/libraries/slick"
         ],
         "post-create-project-cmd": [
