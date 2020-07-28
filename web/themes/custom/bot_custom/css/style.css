@@ -1,4 +1,199 @@
+@import url(paragraph_image-float.css);
+@import url(paragraph_image-grid.css);
+@import url(paragraph_image-widths.css);
+@import url(paragraph_slideshow.css);
+
 /**
  * If using a CSS pre-processor, tell it to overwrite this file. If not, place
  * your custom CSS modifications here.
  */
+
+
+
+/* DEFAULt PARAGRAPHS */
+.paragraph{
+	position: relative;
+	margin-bottom: 1em;
+}
+.paragraph:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*widths*/
+.width-narrow,
+.components--type-simple-title-and-body,
+.components--type-callout,
+.highlighted {
+    width:100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+.wide-width,
+.width-wide {
+	left: 50%;
+	margin-left: -40vw;
+	width: 80vw;
+	max-width: none;
+}
+.full-width,
+.width-full {
+	left: 50%;
+	margin-left: -50vw;
+	width: 100vw;
+	max-width: none;
+}
+.page-node-type-landing .main-container.container {
+    width: 100%;
+    padding: 0;
+}
+.width-narrow,
+.width-wide,
+.width-full,
+.components--type-simple-title-and-body,
+.components--type-callout {
+/*    padding-left: 15px;*/
+    padding-top: 15px;
+}
+
+.components{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    float: none;
+}
+
+/*component background selector*/
+.bg-color-white {
+    background:#fff;
+}
+.bg-color-light-gray {
+    background:#ecebe7;
+}
+
+/*components slideshow*/
+.components--type-slideshow.width-full {
+    padding-left: 0;
+}
+.components .slick--optionset--slideshow .slide .field--name-field-description {
+    position: absolute;
+    bottom: 80px;
+    margin: 0 5%;
+    max-width: 70%;
+    width: 100%;
+    color: #fff;
+    font-size: 1.375rem;
+}
+
+/*slick-dots*/
+.components .slick-dots {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: absolute;
+    bottom: 40px;
+    align-items: center;
+}
+.components--type-testimonial .slick-dots {
+    position: relative;
+    bottom: auto;
+}
+.components .slick-dots li {
+    margin: 0 7px;
+    line-height: 0;
+}
+.components .slick-dots button {
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 10px;
+    font-size: 0;
+}
+.components--type-testimonial .slick-dots button {
+    border: 1px solid #000;
+}
+.components .slick-dots .slick-active button,
+.components .slick-dots li:hover button {
+    background-color: #fff;
+    padding: 7px;
+}
+.components--type-testimonial .slick-dots .slick-active button,
+.components--type-testimonial .slick-dots li:hover button {
+    background-color:#000;
+}
+@media screen and (max-width:768px) {
+    .components .slick-dots button,
+    .components .slick-dots .slick-active button, .components .slick-dots li:hover button {
+        padding: 5px;
+    }
+    .components .slick-dots {
+        bottom: 20px;
+    }
+    .components .slide .field--name-field-description {
+        bottom: 40px;
+        font-size: 1.125rem;
+    }
+}
+
+/*component testimonial*/
+.components--type-testimonial {
+    text-align: center;
+}
+.components--type-testimonial > div:not(.contextual) {
+    margin: 0 20%;
+}
+
+/*component link cards*/
+.components--type-link-cards .bs-region--top h3 {
+    text-align: center;
+}
+.components--type-link-cards .field--name-field-link-card {
+    display: flex;
+    flex-direction: row;
+}
+.components--type-link-cards .field--name-field-link-card > .field--item {
+    flex-basis: 100%;
+    padding: 0 15px;
+}
+.components--type-link-cards .elements {
+    margin: 0;
+    width: 100%;
+}
+.components--type-link-cards img {
+    width: 100%;
+    max-width: 100%;
+}
+/*card stacked*/
+/*card background image*/
+.elements--view-mode-card-background-image .bs-region--main {
+    position: relative;
+    color: #fff;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    min-height: 400px;
+}
+.elements--view-mode-card-background-image  div.contextual-region {
+    position: unset;
+}
+.elements--view-mode-card-background-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.link-card-text-wrapper {
+    position: relative;
+    z-index: 200;
+    width: 100%;
+    text-align: center;
+}
